@@ -1,9 +1,31 @@
 aid: eliseai
 name: EliseAI
-description: 'EliseAI is a company surfaced as a portfolio company of bessemer-venture-partners, sapphire-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  EliseAI is an agentic AI platform that automates communications and operations
+  for the housing and healthcare industries. For property management it offers
+  LeasingAI, ResidentAI, EliseCRM, VoiceAI, AI-guided tours, and automation for
+  maintenance, renewals, move-in, delinquency, lease audits and fee transparency
+  across SMS, email, chat and voice channels. For healthcare, its HealthAI
+  automates patient scheduling, intake and communication with HIPAA and SOC 2
+  Type II compliance. Elise integrates with leading PMS, CRM, EHR and RCM systems.
+  API and integration access is provisioned through the EliseAI developer portal;
+  the company does not publish a self-serve public OpenAPI. This profile was
+  surfaced as a venture portfolio company and enriched by the API Evangelist
+  pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/eliseai/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/63cc1eef179b054a9306598d/63cc1eef179b051c8e0659d0_EliseAI.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,10 +35,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Ai Ml
+- Artificial Intelligence
+- Conversational AI
+- Property Management
+- Real Estate
+- Healthcare
+- Leasing
+- Voice AI
+- Automation
+- CRM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +56,33 @@ maintainers:
 common:
 - type: Website
   url: https://www.eliseai.com/
+- type: Support
+  url: https://support.meetelise.com/hc/en-us
+- type: Blog
+  url: https://eliseai.com/blog
+- type: Login
+  url: https://app.meetelise.com/
+- type: SignUp
+  url: https://eliseai.com/oneai/book-a-demo
+- type: PrivacyPolicy
+  url: https://eliseai.com/policy
+- type: TrustCenter
+  url: https://trust.eliseai.com/
+- type: Compliance
+  url: https://trust.eliseai.com/
+  name: SOC 2 Type II, HIPAA, GDPR
+- type: Authentication
+  url: authentication/eliseai-authentication.yml
+- type: OpenIDConnect
+  url: authentication/eliseai-authentication.yml
+- type: OAuthScopes
+  url: scopes/eliseai-scopes.yml
+- type: WellKnown
+  url: well-known/eliseai-well-known.yml
+- type: DomainSecurity
+  url: security/eliseai-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: searched
+source: https://login.meetelise.com/.well-known/
+host: https://login.meetelise.com
+notes: >-
+  EliseAI's platform identity/login surface is an Auth0-hosted tenant at
+  login.meetelise.com (used by app.meetelise.com). It publishes standard OIDC /
+  OAuth 2.0 discovery documents. The marketing host (www.eliseai.com) and the
+  application host (app.meetelise.com) return SPA/HTML for /.well-known/* and
+  /llms.txt (no real documents there); eliseai.statuspage.io is inactive.
+documents:
+- path: /.well-known/openid-configuration
+  host: login.meetelise.com
+  status: 200
+  file: eliseai-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  host: login.meetelise.com
+  status: 200
+  file: eliseai-oauth-authorization-server.json
+- path: /.well-known/jwks.json
+  host: login.meetelise.com
+  status: 200
+- path: /.well-known/security.txt
+  host: login.meetelise.com
+  status: 404
+- path: /.well-known/security.txt
+  host: www.eliseai.com
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: www.eliseai.com
+  status: 404
