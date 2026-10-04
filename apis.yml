@@ -52,7 +52,7 @@ tags:
 - Artificial Intelligence
 - Conversational AI
 - Property Management
-- Real-Estate
+- Real Estate
 - Healthcare
 - Leasing
 - Voice AI
@@ -69,6 +69,7 @@ tags_raw:
 - Voice AI
 - Automation
 - CRM
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
